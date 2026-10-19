@@ -44,6 +44,7 @@ a{color:var(--mar)}
 .tile:nth-child(3n+2){background:#CFEAE6;border-radius:18px 4px 18px 18px}
 .tile b{font-size:26px;font-weight:400;line-height:1}
 .tile:active{transform:scale(.97)}
+.tile.full{grid-column:1/-1;flex-direction:row;align-items:center;gap:12px}
 .tile.wide{grid-column:1/-1;background:#FFE9E2;border-radius:18px;flex-direction:row;align-items:center;gap:12px;font-size:16px}
 details{border-top:1px solid #D9CFB9;scroll-margin-top:12px}
 summary{list-style:none;cursor:pointer;display:flex;align-items:center;gap:10px;padding:16px 0;font:500 20px Fraunces,Georgia,serif}
@@ -83,8 +84,9 @@ footer{text-align:center;color:var(--sec);font-size:13px;margin-top:24px}
 <a class="tile" href="#condominio"><b>🏊</b>Piscina, quincho y basura</a>
 <a class="tile" href="#playas"><b>🏖️</b>Playas</a>
 <a class="tile" href="#comer"><b>🍽️</b>Comer y comprar</a>
+<a class="tile" href="#panoramas"><b>🗺️</b>Panoramas y alrededores</a>
 <a class="tile" href="#auto"><b>🚗</b>Estacionamiento</a>
-<a class="tile" href="#contacto"><b>📞</b>Contacto y emergencias</a>
+<a class="tile full" href="#contacto"><b>📞</b>Contacto y emergencias</a>
 <a class="tile wide" href="#recuerdo"><b>📸</b>Compartan su recuerdo de Alma Puyai</a>
 </nav>
 
@@ -95,8 +97,17 @@ footer{text-align:center;color:var(--sec);font-size:13px;margin-top:24px}
 <div class="aviso"><b>Traigan toallas y sábanas con fundas de almohada.</b> No están incluidas, ni tampoco salvavidas para la piscina.</div>
 <h3>Camas</h3>
 <ul><li>Habitación principal: 1 cama matrimonial de 2 plazas</li><li>Segunda y tercera habitación: 2 camas individuales de 1 plaza cada una (sirven sábanas de 1 o 1,5 plazas)</li></ul>
+<h3>Al llegar</h3>
+<ul>
+<li><b>Enciendan el termo de agua.</b> Tarda entre 2 y 3 horas en llegar a una temperatura óptima para usarse.</li>
+<li><b>Llave de la terraza.</b> Es una llave pequeña para los ventanales de la terraza y está en la mesa de arrimo del hall, a la entrada del departamento. Normalmente están cerrados pero sin llave. Si el pestillo está hundido, hay que usarla. En el <a href="https://www.instagram.com/almapuyai" target="_blank" rel="noopener">Instagram @almapuyai</a> hay un tutorial del uso correcto de la terraza.</li>
+</ul>
 <h3>Antes de salir</h3>
-<ul><li>Dejen la basura en bolsas bien amarradas en el shaft, como se explica en la sección Piscina, quincho y basura.</li></ul>
+<ul>
+<li><b>Jalen la manilla hacia arriba.</b> Cada vez que salgan y el departamento quede vacío, jalen la manilla de la cerradura inteligente hacia arriba. Así se activa la segunda chapa y se refuerza la seguridad del condominio.</li>
+<li><b>Dejen el refrigerador enchufado.</b> Al hacer el check-out, déjenlo sin restos de comida ni hielo, y enchufado.</li>
+<li>Dejen la basura en bolsas bien amarradas en el shaft, como se explica en la sección Piscina, quincho y basura.</li>
+</ul>
 </div></details>
 
 <details id="casa"><summary>Wi-Fi y la casa</summary><div class="body">
@@ -108,6 +119,13 @@ footer{text-align:center;color:var(--sec);font-size:13px;margin-top:24px}
 <li>Lavadora de 9 kg y secadora de 5 kg.</li>
 <li>Agua caliente con termo eléctrico.</li>
 <li>Calefactores eléctricos en los dormitorios, disponibles en temporada fría.</li>
+</ul>
+<h3>Cómo usar</h3>
+<ul>
+<li><b>Encimera:</b> es vitrocerámica Fensa de 3 platos, con sistema de bloqueo de seguridad para niños. Si no enciende, puede tener activado el bloqueo: en el manual está cómo desactivarlo.<br><a class="btn g" href="https://archivos.fensa.cl/storage/Manuales/240068085.pdf" target="_blank" rel="noopener">Ver manual de la encimera</a></li>
+<li><b>Extractor del segundo baño:</b> es automático y funciona cada cierto periodo. No se enciende con el interruptor de la luz del baño.</li>
+<li><b>Cadena de la puerta:</b> sirve para seguridad y para evitar que niños pequeños salgan solos del departamento.</li>
+<li><b>Camas:</b> no las peguen a la pared, para no dañar el papel mural de las habitaciones.</li>
 </ul>
 <div class="aviso"><b>Cuiden las cañerías.</b> No arrojen al WC confort, toallitas higiénicas, pañales ni nada que pueda tapar. En el condominio ya hubo rebalses por esto.</div>
 </div></details>
@@ -144,11 +162,11 @@ footer{text-align:center;color:var(--sec);font-size:13px;margin-top:24px}
 <details id="playas"><summary>Playas</summary><div class="body">
 <h3>Playa Punta Puyai</h3>
 <p>La más cercana al condominio.</p>
-<a class="btn g" href="https://www.google.com/maps/search/?api=1&amp;query=Playa+Punta+Puyai+Papudo" target="_blank" rel="noopener">Cómo llegar</a>
+<a class="btn g" href="https://maps.app.goo.gl/Be9sbmQGnZAHJwau8" target="_blank" rel="noopener">Cómo llegar</a>
 <h3>Playa Chica</h3>
-<a class="btn g" href="https://www.google.com/maps/search/?api=1&amp;query=Playa+Chica+Papudo" target="_blank" rel="noopener">Cómo llegar</a>
-<h3>Playa Lilén</h3>
-<a class="btn g" href="https://www.google.com/maps/search/?api=1&amp;query=Playa+Lil%C3%A9n+Papudo" target="_blank" rel="noopener">Cómo llegar</a>
+<a class="btn g" href="https://maps.app.goo.gl/veWEKGFbkqggRDLQA" target="_blank" rel="noopener">Cómo llegar</a>
+<h3>Playa Los Lilenes</h3>
+<a class="btn g" href="https://maps.app.goo.gl/GRtgCj2uxncnsVwb9" target="_blank" rel="noopener">Cómo llegar</a>
 <p>Los estacionamientos públicos cerca de las playas son de pago. Revisen la sección Estacionamiento.</p>
 </div></details>
 
@@ -164,6 +182,16 @@ footer{text-align:center;color:var(--sec);font-size:13px;margin-top:24px}
 <h3>Don Beto, en Maitencillo</h3>
 <p>Los mejores locos de la zona, según su anfitrión. El paseo permite visitar también Laguna Zapallar y Cachagua.</p>
 <a class="btn g" href="https://www.instagram.com/betomaitencillo" target="_blank" rel="noopener">Instagram</a>
+</div></details>
+
+<details id="panoramas"><summary>Panoramas y alrededores</summary><div class="body">
+<h3>Strip Center</h3>
+<a class="btn g" href="https://maps.app.goo.gl/W6GqqvTbHE9XA98x5" target="_blank" rel="noopener">Cómo llegar</a>
+<h3>Skate Park</h3>
+<a class="btn g" href="https://maps.app.goo.gl/AfenyeGPn2nxej1PA" target="_blank" rel="noopener">Cómo llegar</a>
+<h3>Radio Taxi</h3>
+<p>Es un servicio de radiotaxi de un tercero, no usa app. Para pedirlo, escríbanle por WhatsApp a Carolina: +56 9 8742 3410.</p>
+<a class="btn" href="https://wa.me/56987423410" target="_blank" rel="noopener">Escribir a Carolina</a>
 </div></details>
 
 <details id="auto"><summary>Estacionamiento</summary><div class="body">
