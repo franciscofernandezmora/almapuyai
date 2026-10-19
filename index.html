@@ -62,7 +62,13 @@ details[open] summary::after{transform:rotate(45deg)}
 .aviso{background:#FFE9E2;border-left:4px solid var(--boya);padding:10px 14px;margin:12px 0;border-radius:0 10px 10px 0}
 .btn{display:inline-block;background:var(--mar);color:#fff;text-decoration:none;padding:8px 14px;border-radius:999px;font-size:14px;margin:4px 6px 4px 0}
 .btn.g{background:transparent;color:var(--mar);border:1px solid var(--mar)}
-.wa{position:fixed;left:50%;bottom:14px;transform:translateX(-50%);width:calc(100% - 28px);max-width:492px;background:var(--boya);color:#fff;text-align:center;text-decoration:none;font-weight:500;padding:14px;border-radius:999px;box-shadow:0 4px 14px rgba(11,74,85,.25)}
+.bar{position:fixed;left:50%;bottom:14px;transform:translateX(-50%);width:calc(100% - 28px);max-width:492px;display:flex;gap:8px}
+.bar a{flex:1;display:flex;flex-direction:column;justify-content:center;align-items:center;line-height:1.25;text-align:center;text-decoration:none;font-weight:500;padding:10px 8px;border-radius:999px;color:#fff;box-shadow:0 4px 14px rgba(11,74,85,.25)}
+.bar small{font-size:13px;font-weight:500}
+.bar b{font-size:15px;font-weight:500}
+.bar .llamar{background:var(--mar)}
+.bar .wa{background:#CF4527}
+.dato.tel strong{font-size:19px}
 footer{text-align:center;color:var(--sec);font-size:13px;margin-top:24px}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
 </style>
@@ -205,7 +211,8 @@ footer{text-align:center;color:var(--sec);font-size:13px;margin-top:24px}
 </div></details>
 
 <details id="contacto"><summary>Contacto y emergencias</summary><div class="body">
-<div class="dato"><span>Anfitrión</span><strong><a href="https://wa.me/56999110694" target="_blank" rel="noopener">WhatsApp</a></strong></div>
+<div class="dato tel"><span>Anfitrión</span><strong><a href="tel:+56999110694">+56 9 9911 0694</a></strong></div>
+<a class="btn" href="tel:+56999110694">📞 Llamar por teléfono</a><a class="btn g" href="https://wa.me/56999110694" target="_blank" rel="noopener">Abrir WhatsApp</a>
 <div class="dato"><span>Instagram</span><strong><a href="https://www.instagram.com/almapuyai" target="_blank" rel="noopener">@almapuyai</a></strong></div>
 <div class="dato"><span>Conserjería</span><strong><a href="tel:+56922200133">+56 9 2220 0133</a><br><a href="tel:+56946511399">+56 9 4651 1399</a></strong></div>
 <h3>Emergencias en Chile</h3>
@@ -225,9 +232,9 @@ footer{text-align:center;color:var(--sec);font-size:13px;margin-top:24px}
 <div class="aviso">Si nos etiquetan, entendemos que podemos compartir su foto en nuestras historias, siempre mencionándolos. Si prefieren que no, avísennos por WhatsApp. Si salen niños, publiquen solo con la autorización de un adulto responsable.</div>
 </div></details>
 
-<footer>Que descansen mucho. Si necesitan algo, escríbannos.<br><a href="https://www.instagram.com/almapuyai" target="_blank" rel="noopener">Instagram @almapuyai</a> · <a href="https://www.airbnb.cl/rooms/1312649274478058267" target="_blank" rel="noopener">Nuestro anuncio en Airbnb</a></footer>
+<footer>Que descansen mucho. Si necesitan algo, llámennos o escríbannos.<br><a href="https://www.instagram.com/almapuyai" target="_blank" rel="noopener">Instagram @almapuyai</a> · <a href="https://www.airbnb.cl/rooms/1312649274478058267" target="_blank" rel="noopener">Nuestro anuncio en Airbnb</a></footer>
 </div>
-<a class="wa" href="https://wa.me/56999110694" target="_blank" rel="noopener">Escribir al anfitrión por WhatsApp</a>
+<div class="bar"><a class="llamar" href="tel:+56999110694"><small>📞 Llamar</small><b>+56 9 9911 0694</b></a><a class="wa" href="https://wa.me/56999110694" target="_blank" rel="noopener"><small>💬 Abrir</small><b>WhatsApp</b></a></div>
 <script>
 function abrir(){var d=document.getElementById(location.hash.slice(1));if(d&&d.tagName==="DETAILS"){d.open=true;d.scrollIntoView()}}
 addEventListener("hashchange",abrir);abrir();
