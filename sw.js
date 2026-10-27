@@ -1,7 +1,7 @@
 // Service worker de la guía: permite abrirla sin señal dentro del condominio.
 // Para forzar una actualización de todo el caché, cambiar el número de VERSION.
-const VERSION = 'almapuyai-v2';
-const PRECACHE = ['/', '/en/', '/hero.webp', '/favicon.svg', '/apple-touch-icon.png'];
+const VERSION = 'almapuyai-v3';
+const PRECACHE = ['/', '/en/', '/pt/', '/hero.webp', '/favicon.svg', '/apple-touch-icon.png'];
 
 self.addEventListener('install', e => {
   e.waitUntil(caches.open(VERSION).then(c => c.addAll(PRECACHE)).then(() => self.skipWaiting()));

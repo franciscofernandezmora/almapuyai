@@ -9,6 +9,7 @@
 <link rel="canonical" href="https://almapuyai.cl/">
 <link rel="alternate" hreflang="es" href="https://almapuyai.cl/">
 <link rel="alternate" hreflang="en" href="https://almapuyai.cl/en/">
+<link rel="alternate" hreflang="pt-BR" href="https://almapuyai.cl/pt/">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <meta property="og:type" content="website">
@@ -38,7 +39,8 @@ a{color:var(--mar)}
 .hero p{margin:6px 0 0;color:var(--espuma);text-shadow:0 1px 5px rgba(0,0,0,.65)}
 .hero h1{font-size:34px;line-height:1.1;max-width:11em;text-shadow:0 2px 8px rgba(0,0,0,.6)}
 .hero svg{display:block;width:100%;height:auto;margin-top:18px}
-.lang{position:absolute;top:14px;right:18px;background:rgba(6,35,42,.6);color:var(--espuma);text-decoration:none;font-size:13px;font-weight:500;padding:5px 12px;border-radius:999px}
+.langs{position:absolute;top:14px;right:18px;display:flex;gap:6px}
+.langs a{background:rgba(6,35,42,.6);color:var(--espuma);text-decoration:none;font-size:13px;font-weight:500;padding:5px 12px;border-radius:999px}
 .tiles{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:22px 0 28px}
 .tile{display:flex;flex-direction:column;gap:6px;padding:14px;border-radius:18px 18px 18px 4px;background:var(--arena);color:var(--tinta);text-decoration:none;font-weight:500;font-size:15px;line-height:1.25}
 .tile:nth-child(3n+2){background:#CFEAE6;border-radius:18px 4px 18px 18px}
@@ -76,7 +78,7 @@ footer{text-align:center;color:var(--sec);font-size:13px;margin-top:24px}
 <body>
 <div class="wrap">
 <header class="hero">
-<a class="lang" href="/en/" hreflang="en" lang="en">English</a>
+<div class="langs"><a href="/en/" hreflang="en" lang="en">English</a><a href="/pt/" hreflang="pt-BR" lang="pt-BR">Português</a></div>
 <p>Condominio Lomas de Puyai, Papudo</p>
 <h1>Bienvenidos a Alma Puyai</h1>
 <p>Todo lo que necesitan para descansar.</p>
