@@ -1,6 +1,6 @@
 // Service worker de la guía: permite abrirla sin señal dentro del condominio.
 // Para forzar una actualización de todo el caché, cambiar el número de VERSION.
-const VERSION = 'almapuyai-v1';
+const VERSION = 'almapuyai-v2';
 const PRECACHE = ['/', '/en/', '/hero.webp', '/favicon.svg', '/apple-touch-icon.png'];
 
 self.addEventListener('install', e => {
@@ -18,7 +18,10 @@ self.addEventListener('activate', e => {
 // Muestra lo guardado al tiro y actualiza en segundo plano (la próxima visita ya trae lo nuevo).
 self.addEventListener('fetch', e => {
   const req = e.request;
-  if (req.method !== 'GET' || new URL(req.url).origin !== location.origin) return;
+  const url = new URL(req.url);
+  if (req.method !== 'GET' || url.origin !== location.origin) return;
+  // La propuesta comercial no se guarda en el teléfono de los huéspedes.
+  if (url.pathname.startsWith('/departamento-digital')) return;
   e.respondWith(
     caches.open(VERSION).then(cache =>
       cache.match(req, { ignoreSearch: true }).then(hit => {
